@@ -1,0 +1,101 @@
+body{
+    font-family:calibri;
+}
+
+#img1,#box,#img2{
+    display: inline-block;
+}
+
+#img1,#img2{
+    height:240px;
+    width:320px;
+}
+
+.container{
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#img1{
+    position: absolute;
+    left:10%;
+    top:140px;
+}
+
+#img2{
+    position: absolute;
+    right:10%;
+    top:130px;
+}
+
+#box{
+    position: absolute;
+    left: 40%;
+    top:40px;
+}
+
+#img3{
+    width:400px;
+    position: absolute;
+    top: 600px;
+    left:37%;
+}
+
+#heading{
+    font-size:4vw;
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+    margin-left:65px;
+    margin-bottom:20px;
+}
+
+
+input{
+    height:50px;
+    width:300px;
+    border-radius: 5px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+#cust_open_button,#sell_open_button{
+    height:50px;
+    width:150px;
+    color:white;
+    background-color: rgb(0, 235, 0);
+    border-radius: 5px;
+    font-weight:bold;
+    font-size:24px;
+    cursor: pointer;
+}
+
+#login_button_cust,#login_button_sell{
+    height:50px;
+    width:150px;
+    color:white;
+    background-color: rgb(0, 235, 0);
+    border-radius: 5px;
+    font-weight:bold;
+    font-size:24px;
+    cursor: pointer;
+    margin-left:77px;
+    margin-top:20px;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}

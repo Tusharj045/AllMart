@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>All Mart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all_after_login.css" />
+</head>
+
+<body>
+    <div id="login_page" style="display:block;">
+        <div class="container">
+            <p id="login_heading">Login</p>
+            <input id="username" type="text" placeholder="Enter your username"><br>
+            <input id="password" type="password" placeholder="Enter your password"><br><br>
+            <button id="login_button">Login</button>
+            <p id="kuch_bhi">Don't have an account?</p>
+            <a href="signup.html">
+                <p id="forgot">Create one here</p>
+            </a>
+        </div>
+    </div>
+    <div id="customer_page" style="display:none;">
+        <div id="main">
+            <p id="cust_heading">Customer 
+            </p><br><br>
+            <h3>All products:</h3>
+            <div id="all">
+
+            </div><br><br>
+            <button id="go_to_cart">Go to cart</button><button id="review_button">Review products</button>
+    </div>
+    </div>
+    <div id="seller_page" style="display:none;">
+        <div id="main">
+            <p id="sel_heading">Seller </p>
+            <div id="all_products">
+                <h3>My products:</h3>
+
+            </div>
+            <button id="add_button"><i class="fa fa-plus"></i> Add product</button>
+            <div id="addProduct" class="add" style="display:none;">
+                <br>
+                <div class="new_product">
+                    <h5>Name:</h5>
+                    <input id="new_name" type="text"><br><br>
+                    <h5>Brand:</h5>
+                    <input id="new_brand" type="text"><br><br>
+                    <h5>Description:</h5>
+                    <input id="new_desc" type="text"><br><br>
+                    <h5>Price:</h5>
+                    <input id="new_price" type="text"><br><br>
+                    <button id="added">Add</button><button id="cancel">Cancel</button>
+                </div>
+                </div>
+                <div id="updateProduct" class="up" style="display:none;">
+                    <br>
+                    <div class="change_product">
+                        <h5>Name:</h5>
+                        <input id="up_name" type="text"><br><br>
+                        <h5>Brand:</h5>
+                        <input id="up_brand" type="text"><br><br>
+                        <h5>Description:</h5>
+                        <input id="up_desc" type="text"><br><br>
+                        <h5>Price:</h5>
+                        <input id="up_price" type="text"><br><br>
+                        <button id="updated">Update</button><button id="cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart_page" style="display:none;">
+        <div id="main">
+            <p id="heading">Your cart</p>
+            <div id="all_selected">
+
+            </div>
+            <!-- <div id="product1" class="product z-depth-4">
+                <div class="product_info">
+                    <h3 class="name">Cookbook</h3>
+                    <h5 class="brand">Sanjeev Kapoor</h5>
+                    <p class="price">Quantity <span class="amount">2</span></p>
+                    <p class="price">Total: Rs. <span class="amount">998</span></p>
+                </div>
+            </div>
+            <div id="product2" class="product z-depth-4">
+                <div class="product_info">
+                    <h3 class="name">Cycle</h3>
+                    <h5 class="brand">Wheelers Inc.</h5>
+                    <p class="price">Quantity <span class="amount">1</span></p>
+                    <p class="price">TotaL: Rs. <span class="amount">2499</span></p>
+                </div>
+            </div><br><br>
+            <h3>Total price: <span class="total">3947</span></h3><br>
+            <h3>Total quantity: <span class="total">3</span></h3><br> -->
+            <br><br>
+            <div id="totals">
+
+            </div>
+            <button id="go_to_ship">Proceed to shipment</button>
+        </div>
+    </div>
+    <div id="ship_page" style="display:none;">
+        <div id="main">
+            <p id="heading">Shipping Address</p>
+            <h5>Enter address where you want to ship your products:</h5><br>
+            <textarea name="loc" id="addr_ship" cols="30" rows="50" placeholder="Shipping address"></textarea><br><br>
+            <button id="bas_kar">Proceed to payment gateway</button>
+            </div>
+    </div>
+    <div id="review_page" style="display:none;">
+        <div id="main">
+            <p id="heading">Review purchased products</p>
+            <div id="all_to_review">
+
+            </div><br><br>
+            <button id="rev_all_done">Done</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script src="js/all_after_login.js"></script>
+</body>
+
+</html>
